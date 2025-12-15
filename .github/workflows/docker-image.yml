@@ -45,5 +45,5 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run:  |
-        docker push -t ralfid/docker-graphql:$NEW_VERSION
-        docker push -t ralfid/docker-graphql:latest
+        docker push ralfid/docker-graphql:$NEW_VERSION
+        docker push ralfid/docker-graphql:latest
